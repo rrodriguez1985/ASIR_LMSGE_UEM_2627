@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones en HTML5</title>
+</head>
+<body>
+    <h1>Secciones en HTML5</h1>
+    Cuando vamos a crear una página web, debemos tener en cuenta que esta puede estar
+    <br>dividida en distintas secciones o partes, en las cuales, alojaremos distinto
+    <br>contenido que se quiera mostrar.
+    <br>En tecnologias como HTML4, se utilizaban principipalmente una serie de cajas o
+    <br>elementos llamados <b>div</b>, para poder insertar información tal como: textos,
+    <br>vídeos, imágenes, tablas, etc.
+    <br>Estos div junto a etiquetas CSS, como pueden ser id (idenficadores) o class (clases)
+    <br>nos permiten darle un nombre concreto así como una serie de atributos / características
+    <br>concretas.
+    <br>A continuación se muestra una estructura de la página con elementos div.
+    <br><img src="img/estructuraHTML4.png" alt="" width="400px" height="300px">
+    <br>Con la llegada de HTML5, este tipo de estructura y etiquetas han dado lugar a una serie de 
+    <br>etiquetas propias en HTML5 que ya recogen los nombres que antes asignábamos a los ids y clases
+    <br>en CSS para estas estructuras.
+    <br><img src="img/estructuraHTML5.png" alt="" width="600px" height="300px" >
+    <hr>
+    <h3>Ejemplo sencillo de página web con estructura HTML5</h3>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web UEM</title>
+    </head>
+    <body>
+        <!-- header: es la cabecera de nuestro documento HTML5. Se inserta TODO lo relacionado con lo que son
+        titulos de cabecera, titulos importantes -->
+        <header>
+            <h1>Centro Profesional UEM</h1>
+        </header>
+        <!-- main: para meter todo el contenido principal de nuestra web -->
+        <main>
+            <h2>Bienvenidxs al CFGS ASIR de la Universidad Europea de Madrid</h2>
+            <p>
+                Aquí encontraréis toda la información sobre los CFGS y Masters de FP de la UEM
+            </p>
+        </main>
+        <footer>
+            Curso 2026-27. Creado por los alumnxs del CFGS de ASIR.
+        </footer>
+    </body>
+    </html>
+    <hr>
+    <h2>¿Para qué sirve cada etiqueta en HTML5?</h2>
+    <ul>
+        <li><b>Cabecera o Header</b>: Esta etiqueta sirve para contener el título o elementos introductorios
+            <br> a nuestra web. Es la parte superior de una página o articulo.
+        </li>
+        <li><b>Menú de Navegación o Nav</b>:En HTML5 podemos agrupar enlaces a otras páginas o apartados,
+            <br>a través de la etiqueta nav. Con esta etiqueta por ejemplo podemos crear menús de una web,
+            <br>que permitan llevarnos a distintas secciones o apartados en la misma página o a webs externas.            
+        </li>
+        <li><b>Contenido Principal o Main:</b> La etiqueta main es la que va a contener todo el contenido central
+            <br>de nuestra página web.
+            <br>IMPORTANTE: Esta etiqueta no sustituye a la etiqueta body del documento HTML5, sino que va dentro
+            <br> de esta. Recordar que esta etiqutea es la más importante para el usuario de nuestra página web.
+        </li>
+        <li><b>Apartado temático o Section:</b> Esta una etiqueta que nos permite agrupar contenido relacionado
+            <br>con un tema, normalmente incluyen un título.
+        </li>
+        <li><b>Contenido Independiente o Article:</b>: Esta una etiqueta que permite agrupar contenido que tiene
+            <br>sentido por sí solo, como puede ser una noticia o una publicación concreta.
+        </li>
+        <li><b>Contenido secundario o Aside:</b> Sirve para agrupar contenido que tiene información complementaria al principal.</li>
+        <li><b>Pie de página o Footer:</b> Contiene información final como puede ser el autor, derechos de autor,
+            <br>enlcanes relacionados, etc.
+        </li>
+        <li>
+            <b>address y hgroup</b>: La primera se utiliza para indicar los datos de contacto de un autor o responsable del contenido.
+            <br>La segunda, se utiliza para agrupar un encabezado con un subtitulo o lema asociado.
+            <br>Recordar: hgroup se suele utilizar para agrupar un título y un subtítulo, mientras que header se utiliza para
+            <br> cuando hay metadatos asociados al título.
+        </li>
+    </ul>
+    <hr>
+    <h2>Diferencias entre una etiqueta Div y  una etiqueta Span</h2>
+    En HTML5, podemos a parte de encontrarnos con las etiquetas anteriormente comentadas, con dos etiquetas
+    <br> que podemos usar para nuestra estructura del documento web y que son las siguientes:
+    <ul>
+        <li><b>div:</b>Esta etiqueta se utiliza para poder agrupar contendo en bloques</li>
+        <li><b>span:</b>Esta etiqueta se utiliza para agrupar una parte de una línea</li>
+    </ul>
+    Ejemplo de una etiqueta div:
+    <br>
+    <div style="background-color:red; color:whitesmoke">
+        <h2>Mi perfil</h2>
+        <p>Me llamo Raúl</p>
+    </div>
+    <div style="background-color: violet; color:azure">
+        <h2>Mis aficiones</h2>
+        <p>Me gusta las nuevas tecnologías y sobre todo Linux, que es amor...</p> 
+    </div>
+    <br>Ejemplo de etiqueta spam
+    <p>
+        Mi color favorito es el <span style="color:darkgreen;">verde</span> que es un color muy bonito
+    </p>
+    <br>Como se puede ver en el ejemplo, la palabra "verde" aparece en color verde, y el resto de la frase
+    <br> mantiene su formato.
+    <ul>
+        <li><b>div:.</b> Se puede utilizar para agrupar bloques de contenido. Ejemplo: un recuadro de perfil</li>
+        <li><b>span</b> Se utiliza para agrupar parte de una linea. Ejemplo: una palabra coloreada</li>
+    </ul>
+    Truco: div organiza bloques. Mientras que span permite trabajar con partes pequeñas de texto.
+    <br>Hay que tener en cuenta que ninguno aporta por sí mismo un significado específico.
+</body>
+</html>
